@@ -1,5 +1,6 @@
 select
 -- from raw orders
+o.productid,
 o.order_id,
 o.order_date,
 o.shipdate,
@@ -7,6 +8,7 @@ o.shipmode,
 o.ordersellingprice - o.ordercostprice as orderprofit,
 o.ordersellingprice,
 o.ordercostprice,
+c.customerid,
 c.customername,
 c.segment,
 c.country,
